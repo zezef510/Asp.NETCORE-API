@@ -1,0 +1,23 @@
+﻿@model List<StudentViewModel>
+
+<h2>Students</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <!-- Thêm các cột khác nếu cần -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.HocSinhID</td>
+                <td>@student.HoTen</td>
+                <!-- Thêm các cột khác nếu cần -->
+            </tr>
+        }
+    </tbody>
+</table>
